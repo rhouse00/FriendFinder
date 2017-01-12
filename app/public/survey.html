@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Friend Finder</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    </head>
+    <body>
+		<div class="container">
+		
+			<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title">Your New Best Friend!</h4>
+			      </div>
+			      <div class="modal-body">
+			        <h5 id="friendName"></h5>
+			        <img id="friendPicture">
+			      </div>
+
+			    </div>
+			  </div>
+			</div>
+
+			<h1>~ Survey Questions ~</h1>
+			<form>
+				<div class="form-group">
+					<label for="">Name (required)</label>
+					<input type="input" class="form-control" id="name" placeholder="ex: Ted Mosby">
+				</div>
+				<div class="form-group">
+					<label for="">Link to Image(required)</label>
+					<input type="input" class="form-control" id="profileImage" placeholder="ex: https://s-media-cache-ak0.pinimg.com/originals/33/3b/4f/333b4f22ae39d1aaf8c23d77e759d8e1.jpg">
+				</div>
+
+				<div class="form-group">
+					<select class="selected" id="q1">
+					<option disabled selected value> -- select an option -- </option>
+						<option value = 1>1 (Strongly Disagree)</option>
+						<option value = 2>2 </option>
+						<option value = 3>3 </option>
+						<option value = 4>4 </option>
+						<option value = 5>5 (Strongly Agree)</option>
+					</select>
+					<label><h3>Question 1</h3><h4> Scotch is the drink of choice</h4></label>
+				</div>
+
+				<div class="form-group">
+					<select class="selected" id="q2">
+						<option disabled selected value> -- select an option -- </option>
+						<option value = 1>1 (Strongly Disagree)</option>
+						<option value = 2>2 </option>
+						<option value = 3>3 </option>
+						<option value = 4>4 </option>
+						<option value = 5>5 (Strongly Agree)</option>
+					</select>
+					<label><h3>Question 2</h3><h4> Astrology really works</h4></label>
+				</div>
+
+				<div class="form-group">
+					<select class="selected" id="q3">
+						<option disabled selected value> -- select an option -- </option>
+						<option value = 1>1 (Strongly Disagree)</option>
+						<option value = 2>2 </option>
+						<option value = 3>3 </option>
+						<option value = 4>4 </option>
+						<option value = 5>5 (Strongly Agree)</option>
+					</select>
+					<label><h3>Question 3</h3><h4> You maintain eye contact with someone for longer than 1 minute </h4></label>
+				</div>
+
+				<div class="form-group">
+					<select class="selected" id="q4">
+						<option disabled selected value> -- select an option -- </option>
+						<option value = 1>1 (Strongly Disagree)</option>
+						<option value = 2>2 </option>
+						<option value = 3>3 </option>
+						<option value = 4>4 </option>
+						<option value = 5>5 (Strongly Agree)</option>
+					</select>
+					<label><h3>Question 4</h3><h4> Michael Bay films are only good for the explosions </h4></label>
+				</div>
+
+				<div class="form-group">
+					<select class="selected" id="q5">
+						<option disabled selected value> -- select an option -- </option>
+						<option value = 1>1 (Strongly Disagree)</option>
+						<option value = 2>2 </option>
+						<option value = 3>3 </option>
+						<option value = 4>4 </option>
+						<option value = 5>5 (Strongly Agree)</option>
+					</select>
+					<label><h3>Question 5</h3><h4> The Beatles are overrated </h4></label>
+				</div>
+
+				<div class="form-group">
+					<select class="selected" id="q6">
+						<option disabled selected value> -- select an option -- </option>
+						<option value = 1>1 (Strongly Disagree)</option>
+						<option value = 2>2 </option>
+						<option value = 3>3 </option>
+						<option value = 4>4 </option>
+						<option value = 5>5 (Strongly Agree)</option>
+					</select>
+					<label><h3>Question 6</h3><h4> If life gives you a lemon, you enjoy the lemonade </h4></label>
+				</div>
+
+				<div class="form-group">
+					<select class="selected" id="q7">
+						<option disabled selected value> -- select an option -- </option>
+						<option value = 1>1 (Strongly Disagree)</option>
+						<option value = 2>2 </option>
+						<option value = 3>3 </option>
+						<option value = 4>4 </option>
+						<option value = 5>5 (Strongly Agree)</option>
+					</select>
+					<label><h3>Question 7</h3><h4> PCs are better than Macs, overall </h4></label>
+				</div>
+
+				<div class="form-group">
+					<select class="selected" id="q8">
+						<option disabled selected value> -- select an option -- </option>
+						<option value = 1>1 (Strongly Disagree)</option>
+						<option value = 2>2 </option>
+						<option value = 3>3 </option>
+						<option value = 4>4 </option>
+						<option value = 5>5 (Strongly Agree)</option>
+					</select>
+					<label><h3>Question 8</h3><h4> Body pillows are awesome </h4></label>
+				</div>
+
+				<div class="form-group">
+					<select class="selected" id="q9">
+						<option disabled selected value> -- select an option -- </option>
+						<option value = 1>1 (Strongly Disagree)</option>
+						<option value = 2>2 </option>
+						<option value = 3>3 </option>
+						<option value = 4>4 </option>
+						<option value = 5>5 (Strongly Agree)</option>
+					</select>
+					<label><h3>Question 9</h3><h4> Weddings are boring </h4></label>
+				</div>
+
+				<div class="form-group">
+					<select class="selected" id="q10">
+						<option disabled selected value> -- select an option -- </option>
+						<option value = 1>1 (Strongly Disagree)</option>
+						<option value = 2>2 </option>
+						<option value = 3>3 </option>
+						<option value = 4>4 </option>
+						<option value = 5>5 (Strongly Agree)</option>
+					</select>
+					<label><h3>Question 10</h3><h4> The internet is never wrong </h4></label>
+				</div>
+
+			</form>
+			<button type="submit" class="btn btn-primary" id="submit" data-toggle="modal" data-target="#myModal">Get Results!</button>
+
+		</div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../data/friends.js"></script>
+    </body>
+</html>
